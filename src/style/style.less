@@ -1,0 +1,181 @@
+.container {
+  position: relative; }
+
+.btn + .btn {
+  margin-left: 1rem; }
+
+.btn-white {
+  background: #fff;
+  color: inherit; }
+
+.btn-black {
+  background: #000;
+  color: #fff; }
+
+.btn-social,
+.btn-social:hover,
+.btn-social:active,
+.btn-social:focus {
+  color: #fff; }
+
+.display-1 {
+  font-size: 4.3rem;
+  margin-top: 3.9rem;
+  margin-bottom: 2.8rem; }
+
+.display-2 {
+  font-size: 3.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem; }
+
+.display-3 {
+  font-size: 2.8rem;
+  margin-top: 3.2rem;
+  margin-bottom: 2rem; }
+
+.display-4 {
+  font-size: 2.0rem;
+  margin-top: 2.0rem;
+  margin-bottom: 1.5rem; }
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 1.0rem;
+  margin-bottom: 1.5rem;
+}
+
+/**
+ * TYPOGRAPHY
+ */
+body {
+  font-family: "Alegreya Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4 {
+  font-family: "Playfair Display", sans-serif; }
+
+
+/**
+ * HELPERS
+ */
+/* Colors */
+.text-white {
+  color: #fff !important; }
+
+.text-black {
+  color: #000 !important; }
+
+/**
+ * SECTIONS
+ */
+.section {
+ position: relative;
+ padding-top: 9rem;
+ padding-bottom: 9rem;
+ background-position: 50% 50%;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.section--full {
+ display: table;
+ width: 100%;
+ height: 100vh;
+ padding-top: 0;
+ padding-bottom: 0;
+
+ .section-table-cell {
+   position: relative;
+   display: table-cell;
+   vertical-align: middle;
+   padding-top: 9rem;
+   padding-bottom: 9rem; }
+}
+
+.section-small {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem; }
+
+.section-title {
+  margin-top: 0; }
+
+/**
+ * NAVBAR
+ */
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-items-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.logo-img {
+  margin-right: 20px;
+}
+
+.collapse.navbar-collapse {
+  width: auto;
+}
+
+/**
+ * Page banner
+ */
+.page-banner {
+  background-image: url('../img/img-sport-banner.jpg');
+}
+
+/**
+ * Stats
+ */
+.item-wrapper {
+  display: flex;
+  .font(2rem, 1.5);
+  margin-top: 2.0rem;
+  margin-bottom: 1.5rem;
+
+  .item {
+    display: flex;
+    margin-right: 2rem;
+
+    .content {
+      height: 100px;
+      width: 100px;
+      margin-right: 0.5rem;
+      line-height: 100px;
+      vertical-align: middle;
+      background: url('../img/hex.png') no-repeat center;
+      background-size: contain;
+    }
+
+    .sign {
+      .font(1rem, 1);
+    //  padding-top: 2rem;
+      width: 100px;
+    }
+  }
+}
+
+/**
+ * ABOUT COMPANY
+ */
+.about-info-text {
+  .font(1.2rem, 1.5);
+}
+
+/**
+ * SERVICES
+ */
+
+ /**
+  * REVIEWS
+  */
+.row.row-eq-height {
+  margin-bottom: 2rem;
+  
+  [class^='col'] {
+    display: flex;
+  }
+}
