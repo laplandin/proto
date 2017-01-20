@@ -213,3 +213,58 @@ h1, h2, h3, h4, h5, h6,
     background-image: url('../img/poster-man.jpg');
   }
 }
+/**
+ * INDIVIDUAL-PROGRAMMS
+ */
+ .individual {
+   position: relative;
+   padding-left: 97px;
+   //border-left: 2px solid grey;
+
+   .subtitle {
+     margin-top: 0;
+     padding-top: 30px;
+   }
+   p {
+     margin-bottom: 0;
+     padding-bottom: 20px;
+   }
+ }
+
+.individual::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 32px;
+  left: -32px;
+  // border: 2px solid grey;
+  // border-radius: 50%;
+}
+
+// .individual::after {
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   width: 2px;
+//   height: 64px;
+//   top: 60px;
+//   bottom: 0;
+//   left: -97px;
+//   background-color: black
+// }
+
+.individual--man::before {
+  background-color: white;
+  background: url('../img/man.png') no-repeat center top;
+}
+
+.individual--woman::before {
+  background-color: white;
+  background: url('../img/woman.png') no-repeat center top;
+}
+
+.individual--group::before {
+  background: url('../img/both.png') no-repeat center top;
+}
