@@ -29,7 +29,8 @@ var path = {
     js: 'src/js/main.js',
     css: 'src/style/main.less',
     img: 'src/img/**/*.*',
-    fonts: 'src/fonts/**/*.*'
+    fonts: 'src/fonts/**/*.*',
+    cssVendor: 'src/style/vendor/*.css'
   },
   watch: {
     //За изменениями каких файлов мы хотим наблюдать
@@ -81,6 +82,11 @@ gulp.task('css:build', function() {
     .pipe(reload({stream:true}));
 });
 
+gulp.task('css:vendor', function() {
+  gulp.src(path.src.cssVendor)
+    .pipe(gulp.dest(path.build.css));
+});
+
 gulp.task('image:build', function () {
   gulp.src(path.src.img) //Выберем наши картинки
     .pipe(imagemin({ //Сожмем их
@@ -105,6 +111,7 @@ gulp.task('build', sequence([
       'html:build',
       'js:build',
       'css:build',
+      'css:vendor',
       'fonts:build',
       'image:build'
 ]) );

@@ -268,3 +268,58 @@ h1, h2, h3, h4, h5, h6,
 .individual--group::before {
   background: url('../img/both.png') no-repeat center top;
 }
+
+/**
+ * CONTACTS
+ */
+.contact-item {
+  padding-left: 30px;
+  position: relative;
+
+}
+
+.contact-item i {
+ position: absolute;
+ left: 0;
+
+ &.fa-map-marker {
+   color: #0275d8;
+   top: 3px;
+ }
+
+ &.fa-phone {
+   top: 3px;
+ }
+
+ &.fa-mobile {
+   top: 26px;
+   left: 3px;
+ }
+
+ &.fa-envelope {
+   top: 3px;
+ }
+}
+
+#map {
+ border-radius: 50%;
+ overflow: hidden;
+}
+
+.form-wrapper {
+ width: 100%;
+}
+
+.write-to-us  * {
+ margin-bottom: 20px;
+ border-radius: 4px;
+ outline: none;
+ border-style: none;
+ border: 1px solid lightgrey;
+ padding: 0 14px;
+}
+
+.write-to-us input:focus,
+.write-to-us textarea:focus {
+  border: 1px solid #0275d8;
+}

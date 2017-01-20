@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <title>Sport</title>
   </head>
   <body>
@@ -362,21 +363,53 @@
   </div>
 </section>
 <!-- Конец блока индивидуальных программ -->
+<!-- Начало блока Контактов -->
+<section class="contacts container section-small">
+  <h2 class="section-title display-3 text-center">Контакты</h2>
+  <div class="row ">
+    <div class="contact-data col-md-4 d-flex">
+      <div class="d-flex flex-column justify-content-center">
+        <div class="contact-item contact-item--address">
+          <a href="/"><img src=""></a>
+          <p><i class="fa fa-map-marker fa-lg"></i>344000 Российская Федерация<br>
+            Ростов-на-Дону, ул.Суворова, 91<br>
+            БЦ &laquo;Лига Наций&raquo; 7 этаж
+          </p>
+        </div>
+        <hr>
+        <div class="contact-item contact-item--call">
+          <a class="d-block" href="tel:+78635200000"><i class="fa fa-phone fa-lg"></i>+7 (863) 520-00-00</a>
+          <a class="d-block" href="tel:+79500000000"><i class="fa fa-mobile fa-lg"></i>+7 950 000-00-00</a>
+        </div>
+        <div class="contact-item contact-item--e-mail">
+          <a href="mailto:hello@fitnes-club.ru"><i class="fa fa-envelope"></i>hello@fitnes-club.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="map col-md-4">
+      <div id="map"></div>
+    </div>
+    <div class="col-md-4 d-flex">
+      <div class="d-flex form-wrapper flex-column justify-content-center">
+        <form action="post" class="write-to-us d-flex flex-column">
+          <input type="text" name="send" placeholder="Имя...">
+          <input type="text" name="send" value="" placeholder="Эл.почта...">
+          <textarea name="send" rows="3" cols="22" placeholder="Ваше сообщение..."></textarea>
+          <button type="submit" name="button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Конец блока Контактов -->
 <!-- Начало футера -->
-	<footer id="footer-white">
+	<footer class="main-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-5 menu">
 					<div class="fitnessclubs">
 						<a href="/"><img src=""></a>
 						<p>© ООО Компания 2017 | Все права защищены<br>Не является публичной офертой<br><a href="#" data-toggle="modal" data-target="#policy">Политика конфиденциальности</a><br><a href="#" data-toggle="modal" data-target="#personal">Согласие на сбор и обработку персональных данных</a></p>
-					</div>
-					<hr>
-					<div class="call margin-top-20">
-						<h3>+7 (863) 520-00-00</h3>
-						<a href="#" data-toggle="modal" data-target="#call" class="button-clear">
-							<span>Заказать звонок</span>
-						</a>
 					</div>
 				</div>
 				<div class="col-sm-3 menu">
@@ -399,6 +432,14 @@
 	        			</li>
 	      			</ul>
 				</div>
+        <div class="col-sm-3">
+          <div class="call margin-top-20">
+						<h3>+7 (495) 647-84-02</h3>
+						<a href="#" data-toggle="modal" data-target="#call" class="button-clear">
+							<span>Заказать звонок</span>
+						</a>
+					</div>
+        </div>
 				<!-- <div class="col-sm-4 newsletter">
 					<div class="signup clearfix">
 						<p>
@@ -421,6 +462,6 @@
 		</div>
 	</footer>
   <!-- Конец футера -->
-	<!-- <script src="/www/fitness-clubs/js/scripts.js"></script> -->
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=aESA1q2fKT7xunhiwQhk0dZGQ_CrXJCa&amp;width=350&amp;height=350&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=map"></script>
   </body>
 </html>
