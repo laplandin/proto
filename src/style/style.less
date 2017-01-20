@@ -98,8 +98,14 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .section-small {
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem; }
+  padding-top: 3.0rem;
+  padding-bottom: 3.0rem;
+  background-color: white;
+
+  // &:hover {
+  //   box-shadow: 0  0 15px 0 rgba(0, 1, 1, 0.7)
+  // }
+ }
 
 .section-title {
   margin-top: 0; }
@@ -134,11 +140,21 @@ h1, h2, h3, h4, h5, h6,
 /**
  * Stats
  */
+ .section-stats {
+   background-color: white;
+   border-bottom: 1px solid #292b2c;
+
+ }
+
+.section-stats .item-wrapper {
+
+}
+
 .item-wrapper {
   display: flex;
   .font(2rem, 1.5);
-  margin-top: 2.0rem;
-  margin-bottom: 1.5rem;
+  padding-top: 2.0rem;
+  padding-bottom: 1.5rem;
 
   .item {
     display: flex;
@@ -156,7 +172,6 @@ h1, h2, h3, h4, h5, h6,
 
     .sign {
       .font(1rem, 1);
-    //  padding-top: 2rem;
       width: 100px;
     }
   }
@@ -300,10 +315,15 @@ h1, h2, h3, h4, h5, h6,
    top: 3px;
  }
 }
-
+.mask {
+  background-color: white;
+  border-radius: 175px;
+  overflow: hidden;
+  z-index: 3001;
+}
 #map {
- border-radius: 50%;
- overflow: hidden;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .form-wrapper {
@@ -322,4 +342,22 @@ h1, h2, h3, h4, h5, h6,
 .write-to-us input:focus,
 .write-to-us textarea:focus {
   border: 1px solid #0275d8;
+}
+
+button.form-submit {
+  height: 40px;
+}
+
+/**
+ * FOOTER
+ */
+.main-footer {
+  h3,
+  p {
+    color: rgba(255,255,255,.75);
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
 }
