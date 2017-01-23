@@ -17,40 +17,38 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="container">
+      <div class="container d-flex">
       <span class="navbar-logo">
         <a href="">
           <img class="logo-img" src="" alt="Logo">
         </a>
       </span>
-      <div class="navbar-items-wrapper">
-      <a class="navbar-brand" href="#">Фитнес</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="">О компании</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Программы</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Услуги</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Отзывы</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Контакты</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-secondary" href="#">Вход для клиентов</a>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link">8-800-000-04-04</span>
-          </li>
-        </ul>
-      </div>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="navbar-brand" href="#">Фитнес</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">О компании</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Программы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-secondary" href="#">Вход для клиентов</a>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link">8-800-000-04-04</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   <!-- Баннер -->
@@ -155,16 +153,16 @@
 <!-- конец модального окна -->
 	<section class="section-stats">
 		<div class="container text-center">
-      <div class="row item-wrapper justify-content-md-center">
-  			<div class="item">
+      <div class="row item-wrapper justify-content-sm-center">
+  			<div class="item col-md-4">
   				<div class="content">97</div>
   				<div class="sign align-self-center">Опытных инструкторов</div>
   			</div>
-  			<div class="item">
+  			<div class="item col-md-4">
   				<div class="content">300</div>
   				<div class="sign align-self-center">Тренажеров</div>
   			</div>
-  			<div class="item">
+  			<div class="item col-md-4">
   				<div class="content">8000</div>
   				<div class="sign align-self-center">Довольных клиентов ежемесячно</div>
   			</div>
@@ -207,11 +205,11 @@
   <section class="section-small section-services container">
     <div class="">
       <h2 class="section-title display-3 text-center">Услуги</h2>
-        <div class="row row-eq-height">
-          <div class="col-sm-6 col-md-3">
+        <div class="row row-eq-height row-services">
+          <div class="col-md-3 d-flex justify-content-center">
             <div class="card cart-block">
               <div>
-                <img class="card-img-top" src="img/personal-trainer.jpg">
+                <img class="img-fluid" src="img/personal-trainer.jpg">
               </div>
               <div class="card-block">
                 <h4 class="card-title text-center">
@@ -220,10 +218,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <div class="card cart-block">
               <div>
-                <img class="card-img-top" src="img/group-training.jpg">
+                <img class="img-fluid" src="img/group-training.jpg">
               </div>
               <div class="card-block">
                 <h4 class="card-title text-center">
@@ -232,10 +230,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <div class="card cart-block">
               <div>
-                <img class="card-img-top" src="img/fitness-coctail.jpg">
+                <img class="img-fluid" src="img/fitness-coctail.jpg">
               </div>
               <div class="card-block">
                 <h4 class="card-title text-center">
@@ -244,10 +242,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <div class="card cart-block">
               <div>
-                <img class="card-img-top" src="img/massage.jpg">
+                <img class="img-fluid" src="img/massage.jpg">
               </div>
               <div class="card-block">
                   <h4 class="card-title text-center">
@@ -481,7 +479,7 @@
 				</div>
         <div class="col-sm-3 d-flex flex-column justify-content-center">
           <div class="call">
-						<h3>8-800-000-04-04</h3>
+						<h3 class="footer-phone">8-800-000-04-04</h3>
 						<a href="#" data-toggle="modal" data-target="#call" class="button-clear">
 							<span class="btn btn-primary">Заказать звонок</span>
 						</a>

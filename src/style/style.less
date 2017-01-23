@@ -113,7 +113,11 @@ h1, h2, h3, h4, h5, h6,
 /**
  * NAVBAR
  */
-.navbar-brand {
+nav.navbar {
+  z-index: 3005;
+}
+
+.navbar-logo {
   margin-right: auto;
 }
 
@@ -140,30 +144,24 @@ h1, h2, h3, h4, h5, h6,
 /**
  * Stats
  */
- .section-stats {
-   background-color: white;
-   border-bottom: 1px solid #292b2c;
-
- }
-
-.section-stats .item-wrapper {
-
+.section-stats {
+ background-color: white;
+ border-bottom: 1px solid #292b2c;
 }
 
 .item-wrapper {
-  display: flex;
-  .font(2rem, 1.5);
-  padding-top: 2.0rem;
-  padding-bottom: 1.5rem;
+.font(2rem, 1.5);
+padding-top: 2.0rem;
+padding-bottom: 1.5rem;
 
   .item {
     display: flex;
-    margin-right: 2rem;
 
     .content {
       height: 100px;
       width: 100px;
       margin-right: 0.5rem;
+      margin-left: auto;
       line-height: 100px;
       vertical-align: middle;
       background: url('../img/hex.png') no-repeat center;
@@ -173,6 +171,7 @@ h1, h2, h3, h4, h5, h6,
     .sign {
       .font(1rem, 1);
       width: 100px;
+      margin-right: auto;
     }
   }
 }
@@ -187,8 +186,8 @@ h1, h2, h3, h4, h5, h6,
 /**
  * SERVICES
  */
-.card .card-img-top {
- width: 100%;
+h4.card-title {
+  font-size: 16px;
 }
 
 .card-block {
@@ -253,22 +252,8 @@ h1, h2, h3, h4, h5, h6,
   width: 64px;
   height: 64px;
   top: 32px;
-  left: -32px;
-  // border: 2px solid grey;
-  // border-radius: 50%;
+  left: 0;
 }
-
-// .individual::after {
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   width: 2px;
-//   height: 64px;
-//   top: 60px;
-//   bottom: 0;
-//   left: -97px;
-//   background-color: black
-// }
 
 .individual--man::before {
   background-color: white;
@@ -355,7 +340,16 @@ button.form-submit {
   h3,
   p {
     color: rgba(255,255,255,.75);
+
+    @media (max-width: 767px) {
+    font-size: 22px;
+    }
+
+    @media (max-width: 575px) {
+    font-size: 16px;
+    }
   }
+
   ul {
     padding: 0;
     list-style: none;
